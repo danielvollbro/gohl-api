@@ -22,11 +22,16 @@ type CheckResult struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Description string `json:"description"`
-	Passed      bool   `json:"passed"`
-	Score       int    `json:"score"`
-	MaxScore    int    `json:"max_score"`
+
+	Passed bool `json:"passed"`
+
+	Score    int `json:"score"`
+	MaxScore int `json:"max_score"`
+
 	Remediation string `json:"remediation"`
-	Error       string `json:"error,omitempty"`
+	DocsURL     string `json:"docs_url"`
+
+	Error string `json:"error,omitempty"`
 }
 
 func PrintReport(report ScanReport) error {
