@@ -34,6 +34,14 @@ type CheckResult struct {
 	Error string `json:"error,omitempty"`
 }
 
+type GrandReport struct {
+	Timestamp     string        `json:"timestamp"`
+	TotalScore    int           `json:"total_score"`
+	MaxScore      int           `json:"max_score"`
+	Rank          string        `json:"rank"`
+	PluginReports []*ScanReport `json:"details"`
+}
+
 func PrintReport(report ScanReport) error {
 	encoder := json.NewEncoder(os.Stdout)
 	return encoder.Encode(report)
