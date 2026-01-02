@@ -35,6 +35,7 @@ type CheckResult struct {
 }
 
 type GrandReport struct {
+	Hostname      string        `json:"hostname"`
 	Timestamp     string        `json:"timestamp"`
 	TotalScore    int           `json:"total_score"`
 	MaxScore      int           `json:"max_score"`
