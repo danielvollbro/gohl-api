@@ -1,9 +1,6 @@
+---
 version: 2
 project_name: gohl-api
-
-archives:
-  - format: tar.gz
-    enabled: false
 
 checksum:
   disable: true
