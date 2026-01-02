@@ -1,0 +1,23 @@
+version: 2
+project_name: gohl-api
+
+archives:
+  - format: tar.gz
+    enabled: false
+
+checksum:
+  disable: true
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+
+release:
+  github:
+    owner: danielvollbro
+    name: gohl-api
+  draft: false
+  prerelease: auto
