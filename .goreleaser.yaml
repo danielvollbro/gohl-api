@@ -2,6 +2,9 @@
 version: 2
 project_name: gohl-api
 
+builds:
+  - skip: true
+
 checksum:
   disable: true
 
