@@ -35,6 +35,7 @@ type CheckResult struct {
 }
 
 type GrandReport struct {
+	LabID         string        `json:"lab_id"`
 	Hostname      string        `json:"hostname"`
 	Timestamp     string        `json:"timestamp"`
 	TotalScore    int           `json:"total_score"`
